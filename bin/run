@@ -1,0 +1,12 @@
+require_relative '../lib/glitcher'
+
+PATH = ARGV[0]
+
+if PATH.nil?
+  puts 'Please enter the path to your image.'
+  exit
+end
+
+glitcher = Glitcher.new(PATH)
+glitcher.shuffle(100000, 1600000, 20000)
+glitcher.save(0, 0, 1000, 664)
