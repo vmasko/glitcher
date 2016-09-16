@@ -1,0 +1,1 @@
+Dir.glob('output/*.jpg').each { |file| File.delete(file) }
